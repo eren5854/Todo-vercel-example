@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js" integrity="sha512-emSwuKiMyYedRwflbZB2ghzX8Cw8fmNVgZ6yQNNXXagFzFOaQmbvQ1vmDkddHjm5AITcBIZfC7k4ShQSjgPAmQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-Do List <img src="images/todo.png"></h2>
+            <div id="addForm" class="row">
+                <input onkeypress="saveEnter(event)" class="add-input" id="input-box" type="text" placeholder="Add Somthing">
+                <button class="add-btn" onclick="save()">Add</button>
+            </div>
+            <div id="updateForm" class="row">
+                <input class="update-input" id="updateWork" type="text" placeholder="Some work...">
+                <div class="btn">
+                    <button class="update" onclick="update()">Update</button>
+                    <button class="cancel" onclick="cancel()">Cancel</button>
+                </div>
+            </div>
+            <ul id="list-container">
+                <!-- <div class="list">
+                    <li>deneme</li>
+                    <span class="operations">
+                        <span><i class="fa-solid fa-pen-to-square"></i></span>
+                        <span><i class="fa-solid fa-trash"></i></span>
+                    </span>
+                </div> -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/5ff4fe19e2.js" crossorigin="anonymous"></script>
+</body>
+</html>
